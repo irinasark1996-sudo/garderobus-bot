@@ -6,7 +6,7 @@ ENV PYTHONUNBUFFERED=1 \
 WORKDIR /app
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends unzip \
+    && apt-get install -y --no-install-recommends unzip git \
     && rm -rf /var/lib/apt/lists/*
 
 COPY garderobus_app_v032.zip /tmp/garderobus_app.zip
