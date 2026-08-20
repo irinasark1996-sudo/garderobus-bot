@@ -9,7 +9,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends unzip git \
     && rm -rf /var/lib/apt/lists/*
 
-COPY garderobus_app_v033.zip /tmp/garderobus_app.zip
+COPY garderobus_app_v034.zip /tmp/garderobus_app.zip
 
 RUN unzip /tmp/garderobus_app.zip -d /app \
     && rm /tmp/garderobus_app.zip \
